@@ -1,3 +1,4 @@
+iniciar = input("Bem vindo ao sistema... Aperte a tecla ENTER para continuar...")
 nome = input("Insira o nome: ")
 idade = int(input("Insira a idade: "))
 sexo=input("Insira o sexo: ").upper()
@@ -10,11 +11,13 @@ while doenca_infectocontagiosa != "SIM" and doenca_infectocontagiosa != "NAO":
     doenca_infectocontagiosa = input("Possui doença infectocontagiosa? - ").upper()
 if doenca_infectocontagiosa=="SIM":
     print("Encaminhar para a sala de quarentena imediatamente!")
+    print("Fim...")
     exit()
 else:
     print("Encaminhar para a sala de espera!")
 if idade>=65:
     print("Encaminhar para a sala prioritária!")
+    print("Fim...")
     exit()
 if sexo=="MASCULINO" or idade<10:
     print("Pacinte não possui prioridade de atendimento!")
@@ -27,3 +30,4 @@ else:
         print("Pacinte possui prioridade de atendimento!")
     else:
         print("Pacinte não possui prioridade de atendimento!")
+print("Fim...")
